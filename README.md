@@ -1,9 +1,12 @@
 # MZQRCode
 Swift二维码识别、生成、扫描、相册选择，使用简单，包含多码识别功能。
 
-<div align=center>
-<img src="1.png" width="300px" />
-</div>
+<table>
+<tr>
+<td><img src="1.png" width="300"/></td>
+<td><img src="2.gif" width="300"/></td>
+</tr>
+</table>
 
 #### Cocoapods 引入
 ```
@@ -18,11 +21,6 @@ MZQRCodeManager.scanQRCode { value in
     print("扫码结果为:\(value)")
 }
 ```
-
-<div align=center>
-<img src="2.gif" width="300px" />
-</div>
-
 
 - 生成二维码
 ```
