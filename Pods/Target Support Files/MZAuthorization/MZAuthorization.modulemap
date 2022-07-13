@@ -1,0 +1,6 @@
+framework module MZAuthorization {
+  umbrella header "MZAuthorization-umbrella.h"
+
+  export *
+  module * { export * }
+}

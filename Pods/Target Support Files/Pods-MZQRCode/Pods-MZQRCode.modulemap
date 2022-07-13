@@ -1,0 +1,6 @@
+framework module Pods_MZQRCode {
+  umbrella header "Pods-MZQRCode-umbrella.h"
+
+  export *
+  module * { export * }
+}

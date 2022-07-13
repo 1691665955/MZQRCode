@@ -1,0 +1,16 @@
+PODS:
+  - MZAuthorization (0.0.2)
+
+DEPENDENCIES:
+  - MZAuthorization (~> 0.0.2)
+
+SPEC REPOS:
+  trunk:
+    - MZAuthorization
+
+SPEC CHECKSUMS:
+  MZAuthorization: a3aebb0886da28278c28e4fea4fa406ca1c1b631
+
+PODFILE CHECKSUM: f03620813f502bbb5c089858318eb3d9f56447a0
+
+COCOAPODS: 1.11.2
