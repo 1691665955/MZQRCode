@@ -1,7 +1,9 @@
 # MZQRCode
 Swift二维码识别、生成、扫描、相册选择，使用简单，包含多码识别功能。
 
-<img src="1.gif" width="300"/>
+<div align=center>
+<img src="1.gif" width="300px" />
+</div>
 
 #### Cocoapods 引入
 ```
