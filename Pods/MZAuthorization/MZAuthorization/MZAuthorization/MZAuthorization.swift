@@ -34,7 +34,9 @@ public struct MZAuthorization {
             case .notDetermined:
                 MZAuthorizationTool.requestPhotoAuthorization(level: .addOnly) { granted in
                     if granted {
-                        success()
+                        DispatchQueue.main.async {
+                            success()
+                        }
                     }
                 }
             case .denied:
@@ -50,7 +52,9 @@ public struct MZAuthorization {
             case .notDetermined:
                 MZAuthorizationTool.requestPhotoAuthorization(level: .readWrite) { granted in
                     if granted {
-                        success()
+                        DispatchQueue.main.async {
+                            success()
+                        }
                     }
                 }
             case .denied:
@@ -66,7 +70,9 @@ public struct MZAuthorization {
             case .notDetermined:
                 MZAuthorizationTool.requsetCameraAuthorization { granted in
                     if granted {
-                        success()
+                        DispatchQueue.main.async {
+                            success()
+                        }
                     }
                 }
             case .denied:
@@ -82,7 +88,9 @@ public struct MZAuthorization {
             case .notDetermined:
                 MZAuthorizationTool.requestMicAuthorization { granted in
                     if granted {
-                        success()
+                        DispatchQueue.main.async {
+                            success()
+                        }
                     }
                 }
             case .denied:
@@ -98,7 +106,9 @@ public struct MZAuthorization {
             case .notDetermined:
                 MZAuthorizationTool.requestContactAuthorization { granted in
                     if granted {
-                        success()
+                        DispatchQueue.main.async {
+                            success()
+                        }
                     }
                 }
             case .denied:
@@ -114,7 +124,9 @@ public struct MZAuthorization {
             case .notDetermined:
                 MZAuthorizationTool.requestCalendarAuthorization(type: .event) { granted in
                     if granted {
-                        success()
+                        DispatchQueue.main.async {
+                            success()
+                        }
                     }
                 }
             case .denied:
@@ -130,7 +142,9 @@ public struct MZAuthorization {
             case .notDetermined:
                 MZAuthorizationTool.requestCalendarAuthorization(type: .reminder) { granted in
                     if granted {
-                        success()
+                        DispatchQueue.main.async {
+                            success()
+                        }
                     }
                 }
             case .denied:
@@ -146,7 +160,9 @@ public struct MZAuthorization {
             case .notDetermined:
                 MZAuthorizationTool.requestLocationAuthorization(level: type == .locationWhenInUse ? .whenInUse : .always ) { granted in
                     if granted {
-                        success()
+                        DispatchQueue.main.async {
+                            success()
+                        }
                     }
                 }
             case .denied:
