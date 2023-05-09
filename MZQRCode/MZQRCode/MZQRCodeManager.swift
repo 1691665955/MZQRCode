@@ -18,7 +18,7 @@ public struct MZQRCodeManager {
             scanController.completionHandler = completionHandler
             scanController.modalTransitionStyle = .coverVertical
             scanController.modalPresentationStyle = .fullScreen
-            UIApplication.shared.delegate?.window!!.rootViewController?.present(scanController, animated: true)
+            currentViewController()?.present(scanController, animated: true)
         }
     }
     
@@ -123,8 +123,17 @@ public struct MZQRCodeManager {
         }
     }
     
+    private static func currentWindow() -> UIWindow? {
+        let app = UIApplication.shared
+        if let window = app.delegate?.window {
+            return window
+        } else {
+            return app.keyWindow
+        }
+    }
+    
     private static func currentViewController() -> UIViewController? {
-        guard let controller = UIApplication.shared.keyWindow?.rootViewController else {
+        guard let controller = currentWindow()?.rootViewController else {
             return nil
         }
         return self.currentViewControllerFrom(controller)

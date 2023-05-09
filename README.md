@@ -7,7 +7,7 @@ Swift二维码识别、生成、扫描、相册选择，使用简单，包含多
 
 #### Cocoapods 引入
 ```
-pod 'MZQRCode', '~> 0.0.1'
+pod 'MZQRCode', '~> 0.0.2'
 ```
 
 #### 使用
