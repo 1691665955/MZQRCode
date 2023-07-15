@@ -16,8 +16,7 @@
 		6AA7FC93287BBD3500AFAFDE /* MZQRCodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA7FC92287BBD3500AFAFDE /* MZQRCodeManager.swift */; };
 		6AA7FC95287BFC1B00AFAFDE /* MZQRCodeScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA7FC94287BFC1B00AFAFDE /* MZQRCodeScanController.swift */; };
 		6AA7FC97287BFDF100AFAFDE /* MZAudioPlayTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA7FC96287BFDF100AFAFDE /* MZAudioPlayTool.swift */; };
-		6AA7FC9A287BFF2400AFAFDE /* scan.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AA7FC99287BFF2400AFAFDE /* scan.wav */; };
-		6AA7FC9C287C11AB00AFAFDE /* MZQRCode.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA7FC9B287C11AB00AFAFDE /* MZQRCode.xcassets */; };
+		716E34992A62693900BF6FD5 /* MZQRCode.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 716E34982A62693900BF6FD5 /* MZQRCode.bundle */; };
 		ABE72185D65AA5DC83C60018 /* Pods_MZQRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D33777222665B6AA1F926D7E /* Pods_MZQRCode.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,8 +32,7 @@
 		6AA7FC92287BBD3500AFAFDE /* MZQRCodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZQRCodeManager.swift; sourceTree = "<group>"; };
 		6AA7FC94287BFC1B00AFAFDE /* MZQRCodeScanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZQRCodeScanController.swift; sourceTree = "<group>"; };
 		6AA7FC96287BFDF100AFAFDE /* MZAudioPlayTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MZAudioPlayTool.swift; sourceTree = "<group>"; };
-		6AA7FC99287BFF2400AFAFDE /* scan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = scan.wav; sourceTree = "<group>"; };
-		6AA7FC9B287C11AB00AFAFDE /* MZQRCode.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MZQRCode.xcassets; sourceTree = "<group>"; };
+		716E34982A62693900BF6FD5 /* MZQRCode.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MZQRCode.bundle; sourceTree = "<group>"; };
 		7EA61201FF4F5465BC4FEC13 /* Pods-MZQRCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZQRCode.release.xcconfig"; path = "Target Support Files/Pods-MZQRCode/Pods-MZQRCode.release.xcconfig"; sourceTree = "<group>"; };
 		D33777222665B6AA1F926D7E /* Pods_MZQRCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MZQRCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD301031641CEB22FC0ABB2E /* Pods-MZQRCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZQRCode.debug.xcconfig"; path = "Target Support Files/Pods-MZQRCode/Pods-MZQRCode.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,22 +85,13 @@
 		6AA7FC91287BB86600AFAFDE /* MZQRCode */ = {
 			isa = PBXGroup;
 			children = (
-				6AA7FC98287BFEEE00AFAFDE /* Resources */,
 				6AA7FC96287BFDF100AFAFDE /* MZAudioPlayTool.swift */,
 				6AA7FC92287BBD3500AFAFDE /* MZQRCodeManager.swift */,
 				6AA7FC94287BFC1B00AFAFDE /* MZQRCodeScanController.swift */,
 				6A6E68E5287D2231006F1E0E /* MZQRCodeIndentifyController.swift */,
+				716E34982A62693900BF6FD5 /* MZQRCode.bundle */,
 			);
 			path = MZQRCode;
-			sourceTree = "<group>";
-		};
-		6AA7FC98287BFEEE00AFAFDE /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				6AA7FC99287BFF2400AFAFDE /* scan.wav */,
-				6AA7FC9B287C11AB00AFAFDE /* MZQRCode.xcassets */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		8F4ABAF55874A0164A00B9EC /* Pods */ = {
@@ -111,7 +100,6 @@
 				DD301031641CEB22FC0ABB2E /* Pods-MZQRCode.debug.xcconfig */,
 				7EA61201FF4F5465BC4FEC13 /* Pods-MZQRCode.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -183,10 +171,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AA7FC9C287C11AB00AFAFDE /* MZQRCode.xcassets in Resources */,
 				6AA7FC8A287BB7F400AFAFDE /* LaunchScreen.storyboard in Resources */,
-				6AA7FC9A287BFF2400AFAFDE /* scan.wav in Resources */,
 				6AA7FC87287BB7F400AFAFDE /* Assets.xcassets in Resources */,
+				716E34992A62693900BF6FD5 /* MZQRCode.bundle in Resources */,
 				6AA7FC85287BB7EC00AFAFDE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

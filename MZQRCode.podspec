@@ -9,8 +9,6 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"
   spec.swift_version = '5.0'
   spec.source_files  = "MZQRCode/MZQRCode/*"
-  spec.resource_bundles = {
-    'MZQRCode' => ['MZQRCode/MZQRCode/Resources/*']
-  }
+  spec.resource = "MZQRCode/MZQRCode/*.{png,bundle}"
   spec.dependency 'MZAuthorization'
 end
