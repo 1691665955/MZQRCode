@@ -12,7 +12,7 @@ struct MZAudioPlayTool {
     /// 播放自定义声音，不超过30s
     /// - Parameter named: 音频文件名称,带后缀
     static func playAudio(_ named: String) {
-        if let path = Bundle.current!.path(forResource: named, ofType: nil) {
+        if let path = Bundle.currentQR!.path(forResource: named, ofType: nil) {
             let url = URL.init(fileURLWithPath: path)
             var id: SystemSoundID = 1
             AudioServicesCreateSystemSoundID(url as CFURL, &id)
