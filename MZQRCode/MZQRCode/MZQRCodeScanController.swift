@@ -35,14 +35,14 @@ class MZQRCodeScanController: UIViewController, AVCaptureMetadataOutputObjectsDe
     private lazy var backButton: UIButton = {
         let button = UIButton(type: .custom)
         button.frame = CGRect(x: 20, y: MZ_STATUS_BAR_HEIGHT + 10, width: 50, height: 50)
-        button.setImage(UIImage(named: "back", in: .currentQR, compatibleWith: nil), for: .normal)
+        button.setImage(UIImage(named: "back", in: .current, compatibleWith: nil), for: .normal)
         button.addTarget(self, action: #selector(back), for: .touchUpInside)
         return button
     }()
     
     private lazy var albumView: UIImageView = {
         let imageView = UIImageView(frame: CGRect(x: MZ_SCREEN_WIDTH - 20 - 64, y: MZ_SCREEN_HEIGHT - MZ_SAFE_BOTTOM - 20 - 64, width: 64, height: 64))
-        imageView.image = UIImage(named: "album", in: .currentQR, compatibleWith: nil)
+        imageView.image = UIImage(named: "album", in: .current, compatibleWith: nil)
         imageView.isUserInteractionEnabled = true
         let tap = UITapGestureRecognizer.init(target: self, action: #selector(showAlbum))
         imageView.addGestureRecognizer(tap)
@@ -52,7 +52,7 @@ class MZQRCodeScanController: UIViewController, AVCaptureMetadataOutputObjectsDe
     private lazy var line: UIImageView = {
         let imageView = UIImageView(frame: CGRect(x: 20, y: MZ_STATUS_BAR_HEIGHT + 90, width: MZ_SCREEN_WIDTH - 40, height: 20))
         imageView.contentMode = .scaleToFill
-        imageView.image = UIImage.init(named: "scan", in: .currentQR, compatibleWith: nil)
+        imageView.image = UIImage.init(named: "scan", in: .current, compatibleWith: nil)
         return imageView
     }()
     
@@ -219,7 +219,7 @@ class MZQRCodeScanController: UIViewController, AVCaptureMetadataOutputObjectsDe
         for dic in muchList {
             let button = UIButton(type: .custom)
             button.frame = NSCoder.cgRect(for: dic["frame"] as! String)
-            button.setImage(UIImage.init(named: "arrow", in: .currentQR, compatibleWith: nil), for: .normal)
+            button.setImage(UIImage.init(named: "arrow", in: .current, compatibleWith: nil), for: .normal)
             button.setTitle(dic["code"] as? String, for: .reserved)
             button.addTarget(self, action: #selector(selectQRCode(sender:)), for: .touchUpInside)
             button.layer.add(self.scaleAnimation(), forKey: "basic")
@@ -384,8 +384,8 @@ class MZQRCodeScanController: UIViewController, AVCaptureMetadataOutputObjectsDe
 }
 
 extension Bundle {
-    static let currentQR: Bundle? = {
-        guard let resourcePath = Bundle(for: MZQRCodeScanController.self).resourcePath else { return nil }
-        return Bundle(path: "\(resourcePath)/MZQRCode.bundle") ?? .main
+    static let current: Bundle? = {
+        let containnerBundle = Bundle(for: MZQRCodeScanController.self)
+        return Bundle(path: containnerBundle.path(forResource: "MZQRCode", ofType: "bundle")!) ?? .main
     }()
 }

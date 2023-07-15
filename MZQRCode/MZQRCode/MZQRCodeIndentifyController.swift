@@ -43,7 +43,7 @@ class MZQRCodeIndentifyController: UIViewController {
         for feature in features {
             let button = UIButton(type: .custom)
             button.frame = self.makeFrame(feature: feature)
-            button.setImage(UIImage.init(named: "arrow", in: .currentQR, compatibleWith: nil), for: .normal)
+            button.setImage(UIImage.init(named: "arrow", in: .current, compatibleWith: nil), for: .normal)
             button.setTitle(feature.messageString, for: .reserved)
             button.addTarget(self, action: #selector(selectQRCode(sender:)), for: .touchUpInside)
             button.layer.add(self.scaleAnimation(), forKey: "basic")
