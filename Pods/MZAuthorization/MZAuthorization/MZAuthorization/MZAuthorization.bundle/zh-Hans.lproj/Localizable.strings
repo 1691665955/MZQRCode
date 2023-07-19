@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  MZAuthorization
+
+  Created by macmini_zl on 2023/7/18.
+  
+*/
+
+"PhotoTitle_add" = "“%@”想要加入您的“照片”";
+"PhotoTitle_all" = "“%@”想访问您的照片";
+"CameraTitle" = "“%@”想访问您的相机";
+"LocationTitle" = "允许“%@”使用您的位置?";
+"MicTitle" = "“%@”想访问您的麦克风";
+"BleTitle" = "“%@”想要使用蓝牙";
+"ContactTitle" = "“%@”想访问您的通讯录";
+"EventTitle" = "“%@”想访问您的日历";
+"ReminderTitle" = "“%@”想访问您的提醒事项";
+"PermissionGo" = "前往开启";
+"PermissionNot" = "不允许";

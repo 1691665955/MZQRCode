@@ -1,16 +1,16 @@
 PODS:
-  - MZAuthorization (0.0.2)
+  - MZAuthorization (0.0.6)
 
 DEPENDENCIES:
-  - MZAuthorization (~> 0.0.2)
+  - MZAuthorization (~> 0.0.6)
 
 SPEC REPOS:
   trunk:
     - MZAuthorization
 
 SPEC CHECKSUMS:
-  MZAuthorization: a3aebb0886da28278c28e4fea4fa406ca1c1b631
+  MZAuthorization: 0b50e806fd7cac2d9875525174dfc009831cf0c0
 
-PODFILE CHECKSUM: f03620813f502bbb5c089858318eb3d9f56447a0
+PODFILE CHECKSUM: 4a9244c1fb144c58e6ed591d151d3fac698b55ca
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

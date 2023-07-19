@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  MZAuthorization
+
+  Created by macmini_zl on 2023/7/18.
+  
+*/
+
+"PhotoTitle_add" = "「%@」想要加入您的「照片」";
+"PhotoTitle_all" = "「%@」想要取用您的照片";
+"CameraTitle" = "「%@」想要取用您的相機";
+"LocationTitle" = "要允許「%@」使用您的位置嗎？";
+"MicTitle" = "「%@」想要取用您的麥克風";
+"BleTitle" = "「%@」想要使用藍牙";
+"ContactTitle" = "「%@」想要取用聯絡人";
+"EventTitle" = "「%@」想要取用您的行事磿";
+"ReminderTitle" = "「%@」想要取用您的提醒事項";
+"PermissionGo" = "前往開啟";
+"PermissionNot" = "不允許";

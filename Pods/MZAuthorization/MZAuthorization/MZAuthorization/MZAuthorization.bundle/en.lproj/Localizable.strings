@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  MZAuthorization
+
+  Created by macmini_zl on 2023/7/18.
+  
+*/
+
+"PhotoTitle_add" = "“%@” Would Like to Add to Your Photos";
+"PhotoTitle_all" = "“%@” Would Like to Access Your Photos";
+"CameraTitle" = "“%@” Would Like to Access the Camera";
+"LocationTitle" = "Allow “%@” to use your location?";
+"MicTitle" = "“%@” Would Like to Access The Microphone";
+"BleTitle" = "“%@” Would Like to Use Bluetooth";
+"ContactTitle" = "“%@” Would Like to Access Your Contacts";
+"EventTitle" = "“%@” Would Like to Access Your Calendar";
+"ReminderTitle" = "“%@” Would Like to Access Your Reminders";
+"PermissionGo" = "OK";
+"PermissionNot" = "Don't Allow";

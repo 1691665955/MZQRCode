@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  MZAuthorization
+
+  Created by macmini_zl on 2023/7/18.
+  
+*/
+
+"PhotoTitle_add" = "“%@”で写真をライブラリに追加しようとしています";
+"PhotoTitle_all" = "“%@”から“写真”にアクセスしようとしています";
+"CameraTitle" = "“%@”がカメラへのアクセスを求めています";
+"LocationTitle" = "“%@”に位置情報の使用を許可しますか?";
+"MicTitle" = "“%@”がマイクへのアクセスを求めています";
+"BleTitle" = "“%@”がBluetoothの使用を求めています";
+"ContactTitle" = "“%@”が連絡先へ のアクセスを求めています";
+"EventTitle" = "“%@”がカレンダーへのアクセスを求めています";
+"ReminderTitle" = "“%@”がリマインダーへのアクセスを求めています";
+"PermissionGo" = "OK";
+"PermissionNot" = "許可しない";

@@ -34,7 +34,7 @@ class MZQRCodeScanController: UIViewController, AVCaptureMetadataOutputObjectsDe
     
     private lazy var backButton: UIButton = {
         let button = UIButton(type: .custom)
-        button.frame = CGRect(x: 20, y: MZ_STATUS_BAR_HEIGHT + 10, width: 50, height: 50)
+        button.frame = CGRect(x: 0, y: MZ_STATUS_BAR_HEIGHT, width: 50, height: 50)
         button.setImage(UIImage(named: "back", in: .qrBundle, compatibleWith: nil), for: .normal)
         button.addTarget(self, action: #selector(back), for: .touchUpInside)
         return button
@@ -211,9 +211,10 @@ class MZQRCodeScanController: UIViewController, AVCaptureMetadataOutputObjectsDe
         self.view.addSubview(maskView)
         
         let cancelBtn = UIButton(type: .custom)
-        cancelBtn.frame = CGRect(x: 20, y: MZ_STATUS_BAR_HEIGHT + 10, width: 50, height: 50)
-        cancelBtn.setTitle("取消", for: .normal)
+        cancelBtn.frame = CGRect(x: 10, y: MZ_STATUS_BAR_HEIGHT, width: 90, height: 50)
+        cancelBtn.setTitle("Cancel".localized(), for: .normal)
         cancelBtn.addTarget(self, action: #selector(cancel(sender:)), for: .touchUpInside)
+        cancelBtn.contentHorizontalAlignment = .left
         maskView.addSubview(cancelBtn)
         
         for dic in muchList {
@@ -226,11 +227,13 @@ class MZQRCodeScanController: UIViewController, AVCaptureMetadataOutputObjectsDe
             maskView.addSubview(button)
         }
         
-        let tip = UILabel.init(frame: CGRect(x: 0, y: MZ_SCREEN_HEIGHT - MZ_SAFE_BOTTOM - 20 - 30, width: MZ_SCREEN_WIDTH, height: 30))
-        tip.text = "轻触小绿点，选择要识别的二维码"
+        let tip = UILabel.init(frame: CGRect(x: 0, y: MZ_SCREEN_HEIGHT - MZ_SAFE_BOTTOM - 20 - 50, width: MZ_SCREEN_WIDTH, height: 50))
+        tip.text = "Tip".localized()
         tip.textColor = .white
         tip.font = .systemFont(ofSize: 16)
         tip.textAlignment = .center
+        tip.adjustsFontSizeToFitWidth = true
+        tip.numberOfLines = 0
         maskView.addSubview(tip)
     }
     
@@ -381,11 +384,4 @@ class MZQRCodeScanController: UIViewController, AVCaptureMetadataOutputObjectsDe
             }
         }
     }
-}
-
-extension Bundle {
-    static let qrBundle: Bundle? = {
-        let containnerBundle = Bundle(for: MZQRCodeScanController.self)
-        return Bundle(path: containnerBundle.path(forResource: "MZQRCode", ofType: "bundle")!) ?? .main
-    }()
 }

@@ -3,7 +3,7 @@ Swift应用权限授权申请统一处理
 
 #### Cocoapods 引入
 ```
-pod 'MZAuthorization', '~> 0.0.2'
+pod 'MZAuthorization', '~> 0.0.6'
 ```
 
 ### 权限类型
@@ -19,6 +19,7 @@ public enum MZAuthorizationType {
     case reminder           // 提醒
     case locationWhenInUse  // 定位
     case locationAlways     // 定位
+    Case bluetooth	    // 蓝牙
 }
 ```
 
@@ -86,6 +87,11 @@ MZAuthorization.requestAuth(type: .locationAlways) {
     self.locationManager?.startUpdatingLocation()
 } failure: {
     print("请打开定位")
+}
+
+// 获取蓝牙权限
+MZAuthorization.requestAuth(type: .bluetooth) {
+    print("蓝牙权限打开成功")
 }
 
 ```

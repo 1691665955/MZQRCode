@@ -12,7 +12,7 @@ public struct MZQRCodeManager {
     
     /// 扫描二维码
     /// - Parameter completionHandler: 扫描回调
-    public static func scanQRCode(completionHandler:  @escaping (String) -> Void) {
+    public static func scanQRCode(completionHandler: @escaping (String) -> Void) {
         MZAuthorization.requestAuth(type: .camera) {
             let scanController = MZQRCodeScanController()
             scanController.completionHandler = completionHandler

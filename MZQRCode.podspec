@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "MZQRCode"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "Swift二维码识别、生成、扫描、相册选择"
   spec.homepage     = "https://github.com/1691665955/MZQRCode"
   spec.authors         = { 'MZ' => '1691665955@qq.com' }

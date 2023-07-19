@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		01E4C6FE0C8F50DE291BA2BAD40C3A74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		1BBC7CDFC5E80B324D431A279FF50E9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		29BA53EC64B0BDEE3E273E1D1E9C341F /* Pods-MZQRCode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37FF8F1D42A4866CC27E71D6F51D5751 /* Pods-MZQRCode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30FB6396E9041EDA62046BD9AB3C9F10 /* MZAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C338F8E6357EE7AFF3A68F8D7DA26F06 /* MZAuthorization.swift */; };
+		3683C3F960F59DA55509E1810C700B6E /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01CB6E678B553E24F31172C282EBC0F /* Localized.swift */; };
 		3866D2409195246C4DA455207BCB72AD /* Pods-MZQRCode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBEF59EDD0EAFFE8DCC990D5C527A9D /* Pods-MZQRCode-dummy.m */; };
-		4A65B5671F525AFBF4BCF47EC04F40B7 /* MZAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61C202AE8BBE625CA77F4713F8F9F15 /* MZAuthorization.swift */; };
-		5EBCBF0EF65E2F1DD35C486938754BBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		70705E7A1CF5014FE521E74DD2E1487A /* MZAuthorization-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F01322B83754A79663C6C30521D160A /* MZAuthorization-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA84032CD7AEB53AE4163ED892B192D6 /* MZAuthorizationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A021F40CA591CDA8D495387395520 /* MZAuthorizationTool.swift */; };
-		B184087156D070C83A8D3D45D8E2E167 /* MZAuthorization-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1926C5360E81D20EE7272C36AF00CC /* MZAuthorization-dummy.m */; };
+		48A41B4143F567F2D16CEB4D608B9CD0 /* MZAuthorization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0210C13286BF268FDD6BF4B0EA660224 /* MZAuthorization.bundle */; };
+		4F5236508784A33DFE9D5B7F5DA6C71E /* MZAuthorization-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 754CBBAA509B283DE3CB79FA62A20E56 /* MZAuthorization-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCAF3BAA6AD2B1CA530A6B0B65C13C62 /* MZAuthorization-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8281D56FEB6D192A37F1C70F4D2F57 /* MZAuthorization-dummy.m */; };
+		D80F7FDAFCD76716337E5BC2F978F71B /* MZAuthorizationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1711D189064EC304E6F7206A136D28D3 /* MZAuthorizationTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		45CC5457AD36D4C043AE914D63A44D56 /* PBXContainerItemProxy */ = {
+		5962BC42AF01A20010C139C9BC1D4426 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -28,27 +30,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00A39CC9D314242121E53E7B2DF039DC /* MZAuthorization-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MZAuthorization-Info.plist"; sourceTree = "<group>"; };
+		0210C13286BF268FDD6BF4B0EA660224 /* MZAuthorization.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MZAuthorization.bundle; path = MZAuthorization/MZAuthorization/MZAuthorization.bundle; sourceTree = "<group>"; };
 		09B528901E8D8EDC6E2340AD73015FE5 /* Pods-MZQRCode.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MZQRCode.modulemap"; sourceTree = "<group>"; };
+		1711D189064EC304E6F7206A136D28D3 /* MZAuthorizationTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MZAuthorizationTool.swift; path = MZAuthorization/MZAuthorization/MZAuthorizationTool.swift; sourceTree = "<group>"; };
+		2531E6047D6621D72F9EA945373557C2 /* MZAuthorization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZAuthorization.debug.xcconfig; sourceTree = "<group>"; };
 		2AB6131D5D4A8A1EAB5A2BF0996C3390 /* Pods-MZQRCode-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MZQRCode-acknowledgements.plist"; sourceTree = "<group>"; };
+		324C86001FDC037AB1F4986742EE0B04 /* MZAuthorization-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZAuthorization-prefix.pch"; sourceTree = "<group>"; };
 		340E7C75CF8323CBCF88B951191836A3 /* Pods-MZQRCode-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MZQRCode-Info.plist"; sourceTree = "<group>"; };
+		342072883735B27009727BC19D27B77F /* MZAuthorization.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZAuthorization.release.xcconfig; sourceTree = "<group>"; };
 		36175C6BE6A597561452ED80060E5666 /* Pods-MZQRCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MZQRCode.release.xcconfig"; sourceTree = "<group>"; };
-		36CA742673AC4BA86238D06FE648D941 /* MZAuthorization-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MZAuthorization-Info.plist"; sourceTree = "<group>"; };
 		37FF8F1D42A4866CC27E71D6F51D5751 /* Pods-MZQRCode-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MZQRCode-umbrella.h"; sourceTree = "<group>"; };
 		3A30E4B85578E535E09121B51CFC3890 /* Pods-MZQRCode-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MZQRCode-frameworks.sh"; sourceTree = "<group>"; };
-		52ADE4D6B9B67EAD8D36E2D497012139 /* MZAuthorization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZAuthorization.debug.xcconfig; sourceTree = "<group>"; };
 		65B718BF9627DA484211430C7B6BB051 /* MZAuthorization */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MZAuthorization; path = MZAuthorization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F01322B83754A79663C6C30521D160A /* MZAuthorization-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZAuthorization-umbrella.h"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		754CBBAA509B283DE3CB79FA62A20E56 /* MZAuthorization-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZAuthorization-umbrella.h"; sourceTree = "<group>"; };
 		763F414B8C8C79C2F3EE0D7915AB9D0F /* Pods-MZQRCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MZQRCode.debug.xcconfig"; sourceTree = "<group>"; };
-		773874EA84DEE78CEDA994C32EFADF93 /* MZAuthorization-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZAuthorization-prefix.pch"; sourceTree = "<group>"; };
-		8B1926C5360E81D20EE7272C36AF00CC /* MZAuthorization-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MZAuthorization-dummy.m"; sourceTree = "<group>"; };
-		8D5A021F40CA591CDA8D495387395520 /* MZAuthorizationTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MZAuthorizationTool.swift; path = MZAuthorization/MZAuthorization/MZAuthorizationTool.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AAF8709CE872D8FD519FB3ED46EA8713 /* MZAuthorization.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MZAuthorization.modulemap; sourceTree = "<group>"; };
-		C69E0B071BA566BC24C60F7C071B3B32 /* MZAuthorization.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZAuthorization.release.xcconfig; sourceTree = "<group>"; };
+		C338F8E6357EE7AFF3A68F8D7DA26F06 /* MZAuthorization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MZAuthorization.swift; path = MZAuthorization/MZAuthorization/MZAuthorization.swift; sourceTree = "<group>"; };
+		CC8281D56FEB6D192A37F1C70F4D2F57 /* MZAuthorization-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MZAuthorization-dummy.m"; sourceTree = "<group>"; };
 		D4855AAED8391A32694E7CA4E727B88A /* Pods-MZQRCode */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MZQRCode"; path = Pods_MZQRCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D61C202AE8BBE625CA77F4713F8F9F15 /* MZAuthorization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MZAuthorization.swift; path = MZAuthorization/MZAuthorization/MZAuthorization.swift; sourceTree = "<group>"; };
+		E0C4AD02E857C3D6ED839A5DDFA676FD /* MZAuthorization.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MZAuthorization.modulemap; sourceTree = "<group>"; };
 		EEBEF59EDD0EAFFE8DCC990D5C527A9D /* Pods-MZQRCode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MZQRCode-dummy.m"; sourceTree = "<group>"; };
+		F01CB6E678B553E24F31172C282EBC0F /* Localized.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Localized.swift; path = MZAuthorization/MZAuthorization/Localized.swift; sourceTree = "<group>"; };
 		F69BE2BF01A725BB84B6DA987BB213DC /* Pods-MZQRCode-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MZQRCode-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,11 +65,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BBC07CC25F251BDFB351109EE8E872D /* Frameworks */ = {
+		9AE7DF6007EA231C3491B0B83E7FFA32 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EBCBF0EF65E2F1DD35C486938754BBF /* Foundation.framework in Frameworks */,
+				1BBC7CDFC5E80B324D431A279FF50E9D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,30 +85,32 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		125583C55A4E1D0CD888F7088DF1FABD /* MZAuthorization */ = {
+		266A1AAD91229AC2CA02F548F0C3F561 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D61C202AE8BBE625CA77F4713F8F9F15 /* MZAuthorization.swift */,
-				8D5A021F40CA591CDA8D495387395520 /* MZAuthorizationTool.swift */,
-				3DBD879ECE229C75B82435F69A681FBC /* Support Files */,
-			);
-			name = MZAuthorization;
-			path = MZAuthorization;
-			sourceTree = "<group>";
-		};
-		3DBD879ECE229C75B82435F69A681FBC /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AAF8709CE872D8FD519FB3ED46EA8713 /* MZAuthorization.modulemap */,
-				8B1926C5360E81D20EE7272C36AF00CC /* MZAuthorization-dummy.m */,
-				36CA742673AC4BA86238D06FE648D941 /* MZAuthorization-Info.plist */,
-				773874EA84DEE78CEDA994C32EFADF93 /* MZAuthorization-prefix.pch */,
-				6F01322B83754A79663C6C30521D160A /* MZAuthorization-umbrella.h */,
-				52ADE4D6B9B67EAD8D36E2D497012139 /* MZAuthorization.debug.xcconfig */,
-				C69E0B071BA566BC24C60F7C071B3B32 /* MZAuthorization.release.xcconfig */,
+				E0C4AD02E857C3D6ED839A5DDFA676FD /* MZAuthorization.modulemap */,
+				CC8281D56FEB6D192A37F1C70F4D2F57 /* MZAuthorization-dummy.m */,
+				00A39CC9D314242121E53E7B2DF039DC /* MZAuthorization-Info.plist */,
+				324C86001FDC037AB1F4986742EE0B04 /* MZAuthorization-prefix.pch */,
+				754CBBAA509B283DE3CB79FA62A20E56 /* MZAuthorization-umbrella.h */,
+				2531E6047D6621D72F9EA945373557C2 /* MZAuthorization.debug.xcconfig */,
+				342072883735B27009727BC19D27B77F /* MZAuthorization.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MZAuthorization";
+			sourceTree = "<group>";
+		};
+		326DE1E2EAA7E8EBC831EEA5AA048229 /* MZAuthorization */ = {
+			isa = PBXGroup;
+			children = (
+				F01CB6E678B553E24F31172C282EBC0F /* Localized.swift */,
+				C338F8E6357EE7AFF3A68F8D7DA26F06 /* MZAuthorization.swift */,
+				1711D189064EC304E6F7206A136D28D3 /* MZAuthorizationTool.swift */,
+				B2D9B5B90A2F88FBFC01B127E2CC74B8 /* Resources */,
+				266A1AAD91229AC2CA02F548F0C3F561 /* Support Files */,
+			);
+			name = MZAuthorization;
+			path = MZAuthorization;
 			sourceTree = "<group>";
 		};
 		4067B2670E157E9B6E74743B37B4C3C0 /* Targets Support Files */ = {
@@ -123,12 +129,12 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		73F8A03AC94301DEA695CC00B738BFE1 /* Pods */ = {
+		B2D9B5B90A2F88FBFC01B127E2CC74B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				125583C55A4E1D0CD888F7088DF1FABD /* MZAuthorization */,
+				0210C13286BF268FDD6BF4B0EA660224 /* MZAuthorization.bundle */,
 			);
-			name = Pods;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		B3D0E4B5012FBD0FBBE16D0D888E56CD /* Pods-MZQRCode */ = {
@@ -148,12 +154,20 @@
 			path = "Target Support Files/Pods-MZQRCode";
 			sourceTree = "<group>";
 		};
+		CEB1FE21FBC6ACF27F590DDBD4B0E768 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				326DE1E2EAA7E8EBC831EEA5AA048229 /* MZAuthorization */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				73F8A03AC94301DEA695CC00B738BFE1 /* Pods */,
+				CEB1FE21FBC6ACF27F590DDBD4B0E768 /* Pods */,
 				0B977994A35EABC668940FD17F803860 /* Products */,
 				4067B2670E157E9B6E74743B37B4C3C0 /* Targets Support Files */,
 			);
@@ -170,19 +184,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4243E0E3F1E5CB086C9AA8C7094AA502 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5236508784A33DFE9D5B7F5DA6C71E /* MZAuthorization-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C20DA00756625ACFC5FBF7AD12F19AF6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				29BA53EC64B0BDEE3E273E1D1E9C341F /* Pods-MZQRCode-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4DC0E7AD1072471FE1083D03FE8B44D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				70705E7A1CF5014FE521E74DD2E1487A /* MZAuthorization-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +215,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				ED87CB9AAA8B6DE36EDD6EAD4A821AD1 /* PBXTargetDependency */,
+				9EDF202494A82AF37EBCCFD171442B31 /* PBXTargetDependency */,
 			);
 			name = "Pods-MZQRCode";
 			productName = Pods_MZQRCode;
@@ -210,12 +224,12 @@
 		};
 		861CC6B8F5BA46E437F88676C70980C2 /* MZAuthorization */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A29308A6F4E1AD90F92E4ECEE4749FBA /* Build configuration list for PBXNativeTarget "MZAuthorization" */;
+			buildConfigurationList = 84695D0895A379A291BD4B394564150C /* Build configuration list for PBXNativeTarget "MZAuthorization" */;
 			buildPhases = (
-				D4DC0E7AD1072471FE1083D03FE8B44D /* Headers */,
-				C8696D37AFF289496035D0401AAEDEB0 /* Sources */,
-				4BBC07CC25F251BDFB351109EE8E872D /* Frameworks */,
-				E57800A02458C21752719FB5D2CDE8F6 /* Resources */,
+				4243E0E3F1E5CB086C9AA8C7094AA502 /* Headers */,
+				4D4C5B8111CFEFE426B22492583B57ED /* Sources */,
+				9AE7DF6007EA231C3491B0B83E7FFA32 /* Frameworks */,
+				244BBBAFFB3C09D508FCC534E6E29D79 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -232,8 +246,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -255,14 +269,15 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7452255DBD0702D339E9B7A87AFCAEBD /* Resources */ = {
+		244BBBAFFB3C09D508FCC534E6E29D79 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48A41B4143F567F2D16CEB4D608B9CD0 /* MZAuthorization.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E57800A02458C21752719FB5D2CDE8F6 /* Resources */ = {
+		7452255DBD0702D339E9B7A87AFCAEBD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,24 +295,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8696D37AFF289496035D0401AAEDEB0 /* Sources */ = {
+		4D4C5B8111CFEFE426B22492583B57ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A65B5671F525AFBF4BCF47EC04F40B7 /* MZAuthorization.swift in Sources */,
-				B184087156D070C83A8D3D45D8E2E167 /* MZAuthorization-dummy.m in Sources */,
-				AA84032CD7AEB53AE4163ED892B192D6 /* MZAuthorizationTool.swift in Sources */,
+				3683C3F960F59DA55509E1810C700B6E /* Localized.swift in Sources */,
+				30FB6396E9041EDA62046BD9AB3C9F10 /* MZAuthorization.swift in Sources */,
+				CCAF3BAA6AD2B1CA530A6B0B65C13C62 /* MZAuthorization-dummy.m in Sources */,
+				D80F7FDAFCD76716337E5BC2F978F71B /* MZAuthorizationTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		ED87CB9AAA8B6DE36EDD6EAD4A821AD1 /* PBXTargetDependency */ = {
+		9EDF202494A82AF37EBCCFD171442B31 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MZAuthorization;
 			target = 861CC6B8F5BA46E437F88676C70980C2 /* MZAuthorization */;
-			targetProxy = 45CC5457AD36D4C043AE914D63A44D56 /* PBXContainerItemProxy */;
+			targetProxy = 5962BC42AF01A20010C139C9BC1D4426 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -441,9 +457,9 @@
 			};
 			name = Debug;
 		};
-		B9205A63455C28BE8B1348DF49DE778E /* Debug */ = {
+		7F45A88DCCA033D3BFCB91B576A5A6D7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52ADE4D6B9B67EAD8D36E2D497012139 /* MZAuthorization.debug.xcconfig */;
+			baseConfigurationReference = 342072883735B27009727BC19D27B77F /* MZAuthorization.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -470,10 +486,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -537,9 +554,9 @@
 			};
 			name = Release;
 		};
-		CDDAE4C71C80E40B290A35A95AA66701 /* Release */ = {
+		D2CD528FE6355849FE37B8D802B657E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C69E0B071BA566BC24C60F7C071B3B32 /* MZAuthorization.release.xcconfig */;
+			baseConfigurationReference = 2531E6047D6621D72F9EA945373557C2 /* MZAuthorization.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -566,11 +583,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -593,11 +609,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A29308A6F4E1AD90F92E4ECEE4749FBA /* Build configuration list for PBXNativeTarget "MZAuthorization" */ = {
+		84695D0895A379A291BD4B394564150C /* Build configuration list for PBXNativeTarget "MZAuthorization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B9205A63455C28BE8B1348DF49DE778E /* Debug */,
-				CDDAE4C71C80E40B290A35A95AA66701 /* Release */,
+				D2CD528FE6355849FE37B8D802B657E6 /* Debug */,
+				7F45A88DCCA033D3BFCB91B576A5A6D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

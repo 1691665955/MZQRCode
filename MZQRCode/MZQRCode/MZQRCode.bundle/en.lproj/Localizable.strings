@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  MZQRCode
+
+  Created by macmini_zl on 2023/7/17.
+  
+*/
+
+"Cancel" = "Cancel";
+"Tip" = "Tap the small green dot to select the QR code you want to recognize";

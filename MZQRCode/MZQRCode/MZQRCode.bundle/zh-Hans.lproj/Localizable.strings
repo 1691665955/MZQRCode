@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  MZQRCode
+
+  Created by macmini_zl on 2023/7/17.
+  
+*/
+
+"Cancel" = "取消";
+"Tip" = "轻触小绿点，选择要识别的二维码";
